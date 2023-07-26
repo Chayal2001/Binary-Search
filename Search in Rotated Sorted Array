@@ -1,0 +1,8 @@
+
+var search = function(nums, target) {
+    for(let i=0; i<target; i++){
+        let last = nums.pop();
+        nums.push(last)
+    }
+    return nums.indexOf(target)
+};
